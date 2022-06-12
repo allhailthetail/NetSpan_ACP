@@ -1,6 +1,16 @@
 # Current NetSpan Install error:
 
-### Error Log:
+### Console Error:
+```
+Unhandled exception. System.ArgumentOutOfRangeException: The value must be greater than or equal to zero and less than the console's buffer size in that dimension. (Parameter 'top')
+Actual value was -1.
+   at System.Console.SetCursorPosition(Int32 left, Int32 top)
+   at System.Console.set_CursorTop(Int32 value)
+   at Airspan.Netspan.Setup.Install.Program.Main(String[] args)
+   at Airspan.Netspan.Setup.Install.Program.<Main>(String[] args)
+```
+
+### Installer Error Log /var/log:
 ```
 SetupLog.Create() connecting file /var/log/nms/installation/Install_129.19.00.182_2022_06_12_14H27M08S496.txt to Trace Output Now and removing all existing listeners
 14:27:08.497 AppMain --------------------------------------------------
